@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brain Task Diver - Puzzle Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="gameContainer" class="game-container">
+        <canvas id="gameCanvas"></canvas>
+        
+        <div id="ui" class="ui-container">
+            <div class="scoreboard">
+                <div class="score-item">
+                    <span class="score-label">Depth:</span>
+                    <span id="depth" class="score-value">0m</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Score:</span>
+                    <span id="score" class="score-value">0</span>
+                </div>
+                <div class="score-item">
+                    <span class="score-label">Speed Boost:</span>
+                    <span id="boost" class="score-value">OFF</span>
+                </div>
+            </div>
+            
+            <div id="gameOverScreen" class="game-over-screen hidden">
+                <div class="game-over-content">
+                    <h1>Game Over!</h1>
+                    <div class="final-stats">
+                        <p>Max Depth: <span id="finalDepth">0</span>m</p>
+                        <p>Final Score: <span id="finalScore">0</span></p>
+                    </div>
+                    <button id="restartBtn">Play Again</button>
+                </div>
+            </div>
+            
+            <div class="controls-info">
+                <p>Hold SPACE or click/tap to swim UP</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
